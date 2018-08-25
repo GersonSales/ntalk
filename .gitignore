@@ -1,3 +1,7 @@
+#local
+.idea/*
+
+
 # Logs
 logs
 *.log
