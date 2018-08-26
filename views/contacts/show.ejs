@@ -1,0 +1,15 @@
+<% include ../partials/header.ejs %>
+<header>
+    <h2>Ntalk - Dados do contato</h2>
+</header>
+<section>
+    <form action="/contact/<%- id %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <p><label>Name:</label><%- contact.name %></p>
+        <p>
+            <button type="submit">Delete</button>
+            <a href="/contact/<%- id %>/edit">Edit</a>
+        </p>
+    </form>
+</section>
+<% include ../partials/footer.ejs %>
